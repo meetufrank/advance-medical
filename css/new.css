@@ -329,3 +329,107 @@ table.maintable td{
 	background-color:(0,0,0,0);
 	margin:0 auto; 
 }
+/*maia*/
+.my-mais-content{
+	position: relative;
+}
+.mais-per-logo{
+	width: 100%;
+	margin: 0 auto;
+/*	border: 1px solid black;*/
+	position: absolute;
+	z-index: 3;
+}
+.mais-img{
+	width:5rem;
+	height:5rem;
+	border-radius: 50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	margin:0 auto;
+	box-shadow:0 0 15px gray; 
+}
+.mais-per-mains{
+	position: absolute;
+	background-color: white;
+/*	height: 500px;*/
+	padding-top:2.5rem;
+	width: 100%;
+	top:2.5rem;
+	padding-bottom: 1rem;
+	z-index: 2;
+/*	border-bottom:1px solid #efefef;*/
+	border-radius: 4px;
+}
+.maisa-name,.maisa-names{
+	text-align: center;
+}
+.maisa-name{
+	color: #c3c6d3;
+	font-size:1rem;
+}
+.maisa-names{
+	color: black;
+	font-size:1.2rem;
+}
+.mais-per-content{
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	top: 9.4rem;
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	padding-right:1.5rem;
+	padding-left:1.5rem;
+	margin-bottom:4rem;
+}
+.manegermain{
+	width: 100%;
+	height:1.5rem;
+	border-bottom:1px solid #efefef;
+	color: #2a4056;
+	padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.manegerspan{
+	color: #8190a7;
+}
+.maneger-ms{
+	width: 100%;
+	height:1.5rem;
+	color: #2a4056;
+	padding-top: 1rem;
+	padding-bottom:1.5rem;
+}
+.maneger-text{
+	color: #2a4056;
+}
+.aui-bar-mais{
+	position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 2.25rem;
+    font-size: 0.9rem;
+    text-align: center;
+    display: table;
+}
+.aui-bar-tab-mais{
+	position: fixed;
+    top: auto;
+    bottom: 0;
+    table-layout: fixed;
+    background-color: #008fff;
+}
+.aui-bar-tab-item-mais{
+	display: table-cell;
+    position: relative;
+    width: 1%;
+    height: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
