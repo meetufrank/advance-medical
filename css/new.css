@@ -14,7 +14,7 @@
 		height: 2.2rem;
 		padding-top: 0.5rem;
 	}
-	input[type="text"],input[type="password"]{
+	.index-btn-number{
 		height: 2.2rem;
 	}
 	.mheader-top{
@@ -22,6 +22,10 @@
 		height: 100px;
 	}
 	.mheader-bottom-one{
+		font-size: 1rem;
+		font-weight: bolder;
+	}
+	.order-mheader-bottom-one{
 		font-size: 1rem;
 		font-weight: bolder;
 	}
@@ -42,7 +46,7 @@
 		height:3rem;
 		padding-top: 0.8rem;
 	}
-	input[type="text"],input[type="password"]{
+	.index-btn-number{
 		height:3rem;
 	}
 	.mheader-top{
@@ -56,6 +60,10 @@
 	.mheader-bottom-two{
 		font-size: 1rem;
 		color: #c3c6d3;
+	}
+	.order-mheader-bottom-one{
+		font-size:1.3rem;
+		font-weight: bolder;
 	}
 }
 /* 判断iphone6plus */
@@ -74,7 +82,7 @@
 		height:3rem;
 		padding-top: 0.8rem;
 	}
-	input[type="text"],input[type="password"]{
+	.index-btn-number{
 		height:3rem;
 	}
 	.mheader-top{
@@ -87,6 +95,10 @@
 	}
 	.mheader-bottom-two{
 		font-size: 1rem;
+	}
+	.order-mheader-bottom-one{
+		font-size:1.3rem;
+		font-weight: bolder;
 	}
 }
 /* 判断ipad */
@@ -106,7 +118,7 @@
 		height:3rem;
 		padding-top: 0.8rem;
 	}
-	input[type="text"],input[type="password"]{
+	.index-btn-number{
 		height:3rem;
 	}
 	.mheader-top{
@@ -119,6 +131,10 @@
 	}
 	.mheader-bottom-two{
 		font-size: 1rem;
+	}
+	.order-mheader-bottom-one{
+		font-size:1.5rem;
+		font-weight: bolder;
 	}
 }
 /* ipad横屏 */
@@ -138,7 +154,7 @@
 		height:3rem;
 		padding-top: 0.8rem;
 	}
-	input[type="text"],input[type="password"]{
+	.index-btn-number{
 		height:3rem;
 	}
 	.mheader-top{
@@ -152,7 +168,14 @@
 	.mheader-bottom-two{
 		font-size: 1rem;
 	}
+	.order-mheader-bottom-one{
+		font-size:1.5rem;
+		font-weight: bolder;
+	}
 }
+}
+.main-show{
+	display: block;
 }
 .index-header{
 	 width:100%;
@@ -178,7 +201,7 @@
 	width: 100%;
 	text-align: center;
 }
-input[type="text"],
+/*input[type="text"],
 input[type="password"]{
     background-color: transparent;
     border-radius: 0;
@@ -197,7 +220,7 @@ input[type="password"]{
     -webkit-appearance: none;
     appearance: none;
     border-bottom:1px solid #E9E9E9; 
-}
+}*/
 .index-name-icon{
 	display: block;
 	float: left;
@@ -209,6 +232,23 @@ input[type="password"]{
 }
 .index-btn-number{
 	float: left;
+	background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width:70%;
+    line-height: normal;
+    color: #424242;
+    font-size:1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-user-select: text;
+     user-select: text;
+    -webkit-appearance: none;
+    appearance: none;
+    border-bottom:1px solid #E9E9E9; 
 }
 .index-name{
 	border:1px solid #E9E9E9;
@@ -264,7 +304,8 @@ input[type="password"]{
 	border: 1px solid white;
 }
 .mheader-top img{
-	border-radius:50%; 
+	border-radius:50%;
+	margin:0 auto;
 }
 /*maintable*/
 table.maintable{
@@ -325,9 +366,67 @@ table.maintable td{
 	height:1.5rem;
 	text-align: center;
 	vertical-align: middle;
-/*	background:#c3c6d3;*/
 	background-color:(0,0,0,0);
 	margin:0 auto; 
+}
+.content-main-order{
+    position: relative;
+    word-break: break-all;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom:3rem;
+}
+.order-main-header{
+	background-color: white;
+	border: 2px solid white;
+	width: 100%;
+	padding: 15px 10px;
+    box-shadow:10px 10px 10px #E9E9E9;
+	-moz-box-shadow:10px 10px 10px #E9E9E9;/*firefox*/ 
+	-webkit-box-shadow:10px 10px 10px #E9E9E9;/*webkit*/ 
+	text-align: center;
+}
+.order-mheader-top{
+	margin:0 auto;
+	height:2rem;
+}
+.order-mheader-top img{
+	vertical-align: middle;
+    margin: auto;
+}
+table.order-maintable{
+	width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border: 1px solid white;
+    border-radius:1px; /*圆角设置属性*/
+	overflow:hidden; 
+	border-top-left-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+}
+table.order-maintable th{
+	border: 1px solid white;  
+    padding: .5em 1em; 
+    text-align: center;
+    background-color: #008FFF;
+    color: white;
+    font-weight: bold;
+    height: 2.2rem;
+}
+table.order-maintable td{
+	border: 1px solid #D4D4D4;  
+    padding: .5em 0.5em; 
+    font-size: 0.6rem;
+    text-align: center;
+    height: 2.6rem;
+    overflow: hidden;
+}
+.order-case{
+	color: #2a4056;
+}
+.order-time{
+	color:white;
 }
 /*maia*/
 .my-mais-content{

@@ -626,15 +626,17 @@ button, .aui-btn {
 	display: inline-block;
 	font-size: 0.7rem;
 	font-weight: 400;
-	font-family: inherit;
+/*	font-family: inherit;*/
 	text-decoration: none;
 	text-align: center;
 	margin: 0;
-	background: #dddddd;
+/*	background: #dddddd;*/
 	padding: 0 0.6rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
-	border-radius: 0.2rem;
+/*	border-radius: 0.2rem;*/
+	border:1px solid #0074CD;
+	border-radius:1rem;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	vertical-align: middle;
@@ -665,7 +667,8 @@ button, .aui-btn {
 }
 .aui-btn-info {
 	color: #ffffff !important;
-	background-color: #03a9f4 !important;
+/*	background-color: #03a9f4 !important;*/
+	background-color: #0074CD !important;
 }
 .aui-btn-info.aui-active, .aui-btn-info:active {
 	color: #fff !important;
@@ -740,7 +743,7 @@ button, .aui-btn {
 /*
 *表单类\输入框\radio\checkbox
 **/
-.aui-input,
+/*.aui-input,
 input[type="text"],
 input[type="password"],
 input[type="search"],
@@ -771,7 +774,7 @@ textarea {
             user-select: text;
     -webkit-appearance: none;
             appearance: none;
-}
+}*/
 input[type="search"]::-webkit-search-cancel-button {
 	display: none;
 }
