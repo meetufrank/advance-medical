@@ -119,17 +119,17 @@
             <div class="content-main-order">
                 <div class="order-main-header">
                     <div class="order-mheader-top"><img src="../img/logo.png"></div>
-                    <p class="order-mheader-bottom-one">Marico</p>
+                    <p class="order-mheader-bottom-one">Callback Service</p>
                     <div><input class="input demo_input"  type="text" readonly="" name="input_date" placeholder="请选择日期" data-lcalendar="2017-01-00,3000-01-00" /></div>
                     <table class="order-maintable" >
                             <tbody id="order-table">
                                 <tr>
                                     <td class="order-time">9.30-9.45</td>
-                                    <td><button type="button" class="aui-btn aui-btn-info">预定</button></td>
+                                    <td><button type="button" class="aui-btn aui-btn-info" onclick="openDialog('text')">预定</button></td>
                                 </tr>
                                 <tr>
                                     <td class="order-time">10.00-10.15</td>
-                                    <td><button type="button" class="aui-btn aui-btn-info">已预定</button></td>
+                                    <td><button type="button" class="aui-btn aui-btn-info" onclick="coloseDialog('text')">已预定</button></td>
                                 </tr>
                                 <tr>
                                     <td class="order-time">10.30-10.45</td>
@@ -167,6 +167,7 @@
 <script type="text/javascript" src="../script/aui-tab.js" ></script>
 <script type="text/javascript" src="../script/jquery-1.8.3.js" ></script>
 <script type="text/javascript" src="../script/lCalendar.js"></script>
+<script type="text/javascript" src="../script/aui-dialog.js"></script>
 <script type="text/javascript">
     window.onload=function(){ 
         document.getElementById("demo").innerHTML = document.getElementById("main1").innerHTML;
@@ -213,5 +214,34 @@
             'type': 'date'
         });
     }
+</script>
+<script type="text/javascript">
+    var dialog = new auiDialog({})
+    function openDialog(type){
+        switch (type) {
+            case "text":
+                dialog.alert({
+                    title:"提示",
+                    msg:'预约成功,已发送至邮箱',
+                    buttons:['确定']
+                },function(ret){
+                     console.log(ret);
+                })
+        }
+
+    }
+    function coloseDialog(type){
+        switch (type) {
+            case "text":
+                dialog.alert({
+                    title:"提示",
+                    msg:'已经预约,请勿重复',
+                    buttons:['确定']
+                },function(ret){
+                     console.log(ret);
+                })
+        }
+    }
+
 </script>
 </html>
